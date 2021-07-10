@@ -1,0 +1,25 @@
+.card
+{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    /* padding: -5px; */
+text-align: center;
+background-color: #b6a7a7;
+margin: 5px;
+}
+.column {
+float: left;
+width: 20%;
+/* margin: 2px; */
+display: block;
+/* padding: 5px; */
+}
+a:hover{
+text-decoration: none;
+color:black;
+}
+
+img
+{
+height: 20%;
+width: 20%;
+}

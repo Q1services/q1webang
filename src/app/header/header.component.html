@@ -1,0 +1,159 @@
+<header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="span6">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <p class="topcontact"><a href="tel:7999 174 356"><i class="icon-phone"></i> 7999 174 356</a></p>
+                    <p class="topcontact"><a href="tel:88392 37545"><i class="icon-phone"></i> 88392 37545</a></p>
+                    <div class="span6">
+
+                        <ul ngbNav #nav="ngbNav" class="nav-tabs" class="social-network">
+                            <li ngbNavItem><a ngbNavLink href="https://www.facebook.com/Quriousones/" data-placement="bottom" title="Facebook"><i
+                                        class="icon-facebook" style="color:#3B5998"></i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://instagram.com/qurious_ones?igshid=1mr36uw7i75h6" data-placement="bottom"
+                                    title="Instagram"><i class="icon-instagram" style="color:red"></i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://api.whatsapp.com/send/?phone=917999174356&text&app_absent=0"
+                                    data-placement="bottom" title="Whatsapp"><i class="fa fa-Whatsapp"
+                                        style="color:#4FCE5D">&#xf232;</i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://www.youtube.com/channel/UCiYLk-8_R_zNsik6R0Njsdw/about"
+                                    data-placement="bottom" title="YouTube"><i class="icon-YouTube"
+                                        style="color:red">&#xf16a;</i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://t.me/Qurious_Ones" data-placement="bottom" title="Telegram"><i
+                                        class="icon-telegram" style="color:#0088cc">&#xf2c6;</i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://www.linkedin.com/company/quriousones" data-placement="bottom"
+                                    title="Linkedin"><i class="icon-linkedin" style="color:#0e76a8"></i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://www.quora.com/profile/Qurious-Ones?q=qurious+ones" data-placement="bottom"
+                                    title="Quora"><i class="fa" style="color:#b92b27">&#xf2c4;</i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://twitter.com/Quriousones?s=09" data-placement="bottom" title="Twitter"><i
+                                        class="icon-twitter" style="color:#00acee"></i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://pin.it/5kZrnUU" data-placement="bottom" title="Pinterest"><i
+                                        class="icon-pinterest" style="color:#c8232c "></i></a></li>
+                            <li ngbNavItem><a ngbNavLink href="https://g.page/Quriouso?share" data-placement="bottom" title="Address"><i
+                                        class="fa fa-globe" aria-hidden="true" style="color:#077e4e"></i></a></li>
+                        </ul>
+                        <div [ngbNavOutlet]="nav"></div>
+                    
+                    </div>
+                </nav>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row nomargin">
+            <div class="span4">
+                <div class="logo">
+                    <a routerLink=''><img src="assets/img/logo.png" alt="" /></a>
+                </div>
+            </div>
+            <div class="span8">
+                <div class="navbar navbar-static-top">
+                    <div class="navigation">
+                        <nav>
+                            <ul ngbNav #nav="ngbNav" class="nav-tabs" class="nav topnav">
+                                <li ngbNavItem class="dropdown active">
+                                    <a ngbNavLink routerLink=''><i class="icon-home"></i> Home </a>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle class="btn btn-secondary dropdown-toggle" href="#" role="button"id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">About us <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='about'>Our Story</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='team'>Team</a></li>
+                                    </ul>
+                                </li>
+                                <li ngbNavItem ngbDropdown class="dropdown">
+                                    <a ngbNavLink ngbDropdownToggle href="#">Study Material <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+                                        <li ngbDropdown class="dropdown"><a ngbDropdownItem class="dropdown-item" href="#">Quizzes<i class="icon-angle-right"></i></a>
+                                            <ul ngbDropdownMenu class="dropdown-menu sub-menu-level1">
+                                                <li><a ngbDropdownItem class="dropdown-item" href="#">Mock Test</a></li>
+                                                <li ngbDropdown class="dropdown"><a ngbDropdownItem class="dropdown-item" href="#">Category<i
+                                                            class="icon-angle-right"></i></a>
+                                                    <ul ngbDropdownMenu class="dropdown-menu sub-menu-level1">
+                                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Aptitude</a></li>
+                                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Reasoning</a></li>
+                                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='quiz-eng'>English</a></li>
+                                                        <li><a ngbDropdownItem class="dropdown-item" href="#">GK</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li ngbDropdown class="dropdown">
+                                            <a ngbDropdownToggle href="#">Contents<i class="icon-angle-right"></i></a>
+                                            <ul ngbDropdownMenu class="dropdown-menu sub-menu-level1">
+                                                <li><a ngbDropdownItem class="dropdown-item" href="#">Notes</a></li>
+                                                <li><a ngbDropdownItem class="dropdown-item" href="#">Free Study Material</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle href="#">Blog <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='blog-health'>Health</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='blog-success'>Success Tips</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Career</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#">post left sidebar</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Post right sidebar</a></li>
+                                    </ul>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle href="#">Scholarship <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#"></a></li>
+                                    </ul>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle href="#">Membership <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='buycourse'>Buy a Course</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Micro Course</a></li>
+                                    </ul>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle href="#">Log in <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='myaccount'>My Account</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='shareqpaper'>Share Question Paper</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='Attendance'>Attendance</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='feedback'>Feedback</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item"
+                                                href="https://docs.google.com/spreadsheets/d/1mJdPv8aPD3FImxmVEaOubtUrv1q_K03vuG4CPp6uygQ/edit?usp=sharing">Student
+                                                Leaderboard</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='scoreboard'>Student Scoreboard</a></li>
+                                    </ul>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle href="#">Service Offered <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+
+                                        <li><a routerLink='faq' ngbDropdownItem class="dropdown-item" routerLink='faq'>FAQ</a></li>
+                                        <!--<li><a href="team.html">Team</a></li>-->
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='services'>Services</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" routerLink='pricingbox'>Pricing boxes</a></li>
+                                        <!-- <li><a href="404.html">404</a></li>  -->
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a ngbDropdownItem class="dropdown-item" routerLink='contact'>Contact Us </a>
+                                </li>
+                                <li ngbDropdown class="dropdown">
+                                    <a ngbDropdownToggle href="#">More <i class="icon-angle-down"></i></a>
+                                    <ul ngbDropdownMenu class="dropdown-menu">
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Career</a></li>
+                                        <li><a ngbDropdownItem class="dropdown-item" href="#">Refer and earn</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- end navigation -->
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
